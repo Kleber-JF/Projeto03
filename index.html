@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tektur:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fs-1">Loja de games</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end fs-5" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-loja" class="nav-link">
+                            <i class="bi bi-house-door"></i>
+                            Sobre a loja</a> 
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#jogos" class="nav-link">
+                            <i class="bi bi-controller"></i>
+                            Jogos</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#consoles" class="nav-link">
+                            <i class="bi bi-pc"></i>
+                            Consoles</a> 
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-at"></i>
+                            Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+    <section id="sobre-loja" class="pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center section-title pt-5 pb-5">Sobre a loja</h2>
+            </div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="carousel-slide" data-bs-ride="carousel" id="carousel-loja">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/loja/loja1.jpg" class="d-block w-100"  alt="foto interna da loja" data-bs-interval="4000">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/loja/loja2.jpg" class="d-block w-100"  alt="foto interna da loja" data-bs-interval="4000">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/loja/loja3.jpg" class="d-block w-100"  alt="foto interna da loja" data-bs-interval="4000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <h3 class="section-title">Quem nós somos?</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quae accusantium eos aspernatur rem distinctio officia dolore provident ex! Non repellat beatae vel doloremque perspiciatis impedit nobis ipsa eum nesciunt.
+                        </p>
+                        <h3 class="section-title">Nossas especialidades:</h3>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+                    </div>
+                </div>
+         </div>
+    </section>
+    <section id="jogos" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center section-title mb-5">Jogos</h2>
+            </div>
+            <div class="row">
+                <aside class="col-lg-2">
+                    <nav class="nav nav-pills flex-column mb-4">
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#playstation" class="fw-bold text-start nav-link  active">Playstation 5</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#xbox" class="fw-bold text-start nav-link ">X-Box</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#nintendo" class="fw-bold text-start nav-link ">Nintendo Switch</button>
+                    </nav>
+                </aside>
+                <div class="col-lg-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="playstation">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 pb-5">
+                                    <img class="d-block w-80" src="./images/games/ps5/jogo1.webp" alt="capa jogo dead space" />
+                                    <h5 class=" fw-bold mt-2">Dead Space Remake</h5>
+                                    <p>R$ 249,90</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                                </div>
+                                <div class="col-lg-4 col-md-6 pb-5">
+                                    <img class="d-block w-80" src="./images/games/ps5/jogo2.webp" alt="capa jogo god of war ragnarok" />
+                                    <h5 class=" fw-bold mt-2">God of War: Ragnarok</h5>
+                                    <p>R$ 249,90</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                                </div>
+                                <div class="col-lg-4 col-md-6 pb-5">
+                                    <img class="d-block w-80" src="./images/games/ps5/jogo3.webp" alt="capa jogo final fantasy 16" />
+                                    <h5 class=" fw-bold mt-2">Final Fantasy XVI</h5>
+                                    <p>R$ 249,90</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                                </div>
+                                <div class="col-lg-4 col-md-6 pb-5">
+                                    <img class="d-block w-80" src="./images/games/ps5/jogo4.webp" alt="capa jogo ghostwire" />
+                                    <h5 class=" fw-bold mt-2">Ghostwire</h5>
+                                    <p>R$ 249,90</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane " id="xbox">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 pb-5">
+                                    <img class="d-block w-80" src="./images/games/xbox/jogo1.webp" alt="capa jogo dead space" />
+                                    <h5 class=" fw-bold mt-2">Elden Ring</h5>
+                                    <p>R$ 249,90</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                                </div>
+                                <div class="col-lg-4 col-md-6 pb-5">
+                                    <img class="d-block w-80" src="./images/games/xbox/jogo2.webp" alt="capa jogo dead space" />
+                                    <h5 class=" fw-bold mt-2">Gotham Knights</h5>
+                                    <p>R$ 249,90</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="nintendo">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 pb-5">
+                                    <img class="d-block w-80" src="./images/games/nintendo/jogo1.webp" alt="capa jogo dead space" />
+                                    <h5 class=" fw-bold mt-2">Splatoon 3</h5>
+                                    <p>R$ 249,90</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                                </div>
+                                <div class="col-lg-4 col-md-6 pb-5">
+                                    <img class="d-block w-80" src="./images/games/nintendo/jogo2.webp" alt="capa jogo dead space" />
+                                    <h5 class=" fw-bold mt-2">Mario Strikers</h5>
+                                    <p>R$ 249,90</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                                </div>
+                                <div class="col-lg-4 col-md-6 pb-5">
+                                    <img class="d-block w-80" src="./images/games/nintendo/jogo3.webp" alt="capa jogo dead space" />
+                                    <h5 class=" fw-bold mt-2">Super Mario Bros.U</h5>
+                                    <p>R$ 249,90</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                                </div>
+                                <div class="col-lg-4 col-md-6 pb-5">
+                                    <img class="d-block w-80" src="./images/games/nintendo/jogo4.webp" alt="capa jogo dead space" />
+                                    <h5 class=" fw-bold mt-2">Zelda: Breath of the Wild</h5>
+                                    <p>R$ 249,90</p>
+                                    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="consoles" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center">Consoles</h2>
+            </div>
+            <div class="row">
+                <nav class="nav nav-pills">
+                    <button data-bs-toggle="tab" data-bs-target="#play-console" class="nav-link fw-bold mb-4 active" type="button">Playstation 5</button>
+                    <button data-bs-toggle="tab" data-bs-target="#xbox-console" class="nav-link fw-bold mb-4" type="button">X-Box</button>
+                    <button data-bs-toggle="tab" data-bs-target="#switch-console" class="nav-link fw-bold mb-4" type="button">Nintendo Switch</button>
+                </nav>
+                <div class="tab-content">
+                    <div id="play-console" class="tab-pane active">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card text-bg-success mb-4">
+                                    <img src="./images/consoles/playstation/play1.webp"/>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Playstation 5(Digital): GoW</h4>
+                                        <h5 class="card-subtitle">R$ 4.000,00</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.                    
+                                        </p>
+                                        <a href="#" class="btn btn-primary mb-2">Saiba mais</a>
+                                        <a href="#" class="btn btn-primary mb-2">Adicionar ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card text-bg-success mb-4">
+                                    <img src="./images/consoles/playstation/play2.webp" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Playstation 5(Mídia): FIFA 23</h4>
+                                        <h5 class="card-subtitle">R$ 4.000,00</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <a href="#" class="btn btn-primary mb-2">Saiba mais</a>
+                                        <a href="#" class="btn btn-primary mb-2">Adicionar ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card text-bg-success mb-4">
+                                    <img src="./images/consoles/playstation/play3.webp" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Playstation 5(Digital)</h4>
+                                        <h5 class="card-subtitle">R$ 3.700,00</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <a href="#" class="btn btn-primary mb-2">Saiba mais</a>
+                                        <a href="#" class="btn btn-primary mb-2">Adicionar ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>                                                                                    
+                        </div>
+                    </div>
+                    <div id="xbox-console" class="tab-pane">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card text-bg-success mb-4">
+                                    <img src="./images/consoles/xbox/box1.webp" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">X-Box Series S</h4>
+                                        <h5 class="card-subtitle">R$ 3.700,00</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <a href="#" class="btn btn-primary mb-2">Saiba mais</a>
+                                        <a href="#" class="btn btn-primary mb-2">Adicionar ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card text-bg-success mb-4">
+                                    <img src="./images/consoles/xbox/box2.webp" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">X-Box Series X</h4>
+                                        <h5 class="card-subtitle">R$ 4.700,00</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <a href="#" class="btn btn-primary mb-2">Saiba mais</a>
+                                        <a href="#" class="btn btn-primary mb-2">Adicionar ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card text-bg-success mb-4">
+                                    <img src="./images/consoles/xbox/box3.webp" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Título do card</h4>
+                                        <h5 class="card-subtitle">R$ 3.700,00</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <a href="#" class="btn btn-primary mb-2">Saiba mais</a>
+                                        <a href="#" class="btn btn-primary mb-2">Adicionar ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card text-bg-success mb-4">
+                                    <img src="./images/consoles/xbox/box4.webp" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Título do card</h4>
+                                        <h5 class="card-subtitle">R$ 3.700,00</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <a href="#" class="btn btn-primary mb-2">Saiba mais</a>
+                                        <a href="#" class="btn btn-primary mb-2">Adicionar ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="switch-console" class="tab-pane">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card text-bg-success mb-4">
+                                    <img src="./images/consoles/nintendo/switch1.webp" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Título do card</h4>
+                                        <h5 class="card-subtitle">Subtitulo do card</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <a href="#" class="btn btn-primary mb-2">Saiba mais</a>
+                                        <a href="#" class="btn btn-primary mb-2">Adicionar ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card text-bg-success mb-4">
+                                    <img src="./images/consoles/nintendo/switch2.webp" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Título do card</h4>
+                                        <h5 class="card-subtitle">Subtitulo do card</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <a href="#" class="btn btn-primary mb-2">Saiba mais</a>
+                                        <a href="#" class="btn btn-primary mb-2">Adicionar ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card text-bg-success mb-4">
+                                    <img src="./images/consoles/nintendo/switch3.webp" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Título do card</h4>
+                                        <h5 class="card-subtitle">Subtitulo do card</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <a href="#" class="btn btn-primary mb-2">Saiba mais</a>
+                                        <a href="#" class="btn btn-primary mb-2">Adicionar ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fale-conosco" class="pt-5 pb-5">
+        <div class="container">
+            <h2 class="section-title text-center">Fale conosco</h2>                
+            <div class="row">
+                <div class="col-md-7 mb-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-bold">Seu nome:</label>
+                            <input type="text" id="nome" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">Seu e-mail:</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label fw-bold">Seu telefone (opcional):</label>
+                            <input type="tel" id="telefone" class="form-control" data-mask="(00)00000-0000">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label fw-bold">Sua mensagem:</label>
+                            <textarea class="form-control" rows="4" id="mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary fw-bold">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <h3 class="section-title fs-4">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            Redes sociais</h3>
+                        <ul class="social-links">
+                            <li class="fs-1">
+                                <a href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="fs-1 ms-2 me-2">
+                                <a href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="fs-1">
+                                <a href="#">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mt-4">
+                        <h3 class="section-title fs-4">
+                            <i class="bi bi-cursor-fill"></i>
+                            Endereço</h3>
+                        <p>
+                            Rua Teste Exemplo, 145 - Bootstrap - São Paulo - SP
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./jquery.mask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>    
+    <script src="./main.js"></script>
+</body>
+</html>

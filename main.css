@@ -1,0 +1,63 @@
+body {
+    font-family:'Roboto', sans-serif;
+    background-color: aquamarine;
+    font-weight: bold;
+    color: #160ca1;
+}
+
+header {
+    background-color: aqua;
+}
+
+.section-title {
+    font-family: 'Tektur', cursive;
+    font-weight: bold;
+    color: blue;
+}
+
+.carousel-item img {
+    height: 300px;
+}
+
+#jogos, #fale-conosco {
+    background-color: #98eca3;
+}
+
+#fale-conosco .social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none
+}
+
+form textarea {
+    resize: none;
+}
+
+.card img {
+    max-height: 414px;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 200px;
+        margin-bottom: 8px;
+    }
+    
+    #jogos .container .col-lg-4 {
+        text-align: center;
+    }
+
+    #jogos img {   
+        width: 100%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .carousel-item img {
+        height: 400px;
+        margin-bottom: 16px;
+    }
+}
